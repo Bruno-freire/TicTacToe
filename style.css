@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(169, 169, 169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 25em;
+  height: 25em;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(44, 39, 39);
+  border: 2px solid red;
+}
+.players{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  bottom: 2em;
+}
+.players > p{
+  position: relative;
+  top: 0.5em;
+}
+.player{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputNamePlayer{
+  background-color: rgb(209, 209, 209);
+  border: none;
+}
