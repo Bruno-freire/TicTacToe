@@ -1,55 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./index.js" defer></script>
-  <title>Tic-Tac-Toe</title>
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-  <div class="background">
-    <div class="players">
-      <div class="player">
-        <label for="playerOne">Jogador</label>
-        <input type="text" name="player" class="inputNamePlayer" disabled id="playerOne">
-      </div>
-      <p>VS</p>
-      <div class="player">
-        <label for="playerTwo">Jogador</label>
-        <input type="text" name="player" class="inputNamePlayer" disabled id="playerTwo">
-      </div>
-    </div>
-    <div class="container">
-      <div class="content border">
-        <div class="X"></div>
-      </div>
-      <div class="content top">
-        <div class="X"></div>
-      </div>
-      <div class="content border">
-        <div class="X"></div>
-      </div>
-      <div class="content left">
-        <div class="X"></div>
-      </div>
-      <div class="content center" id="teste">
-        <div class="X"></div>
-      </div>
-      <div class="content right">
-        <div class="X"></div>
-      </div>
-      <div class="content border">
-        <div class="X"></div>
-      </div>
-      <div class="content bot">
-        <div class="X"></div>
-      </div>
-      <div class="content border">
-        <div class="X"></div>
-      </div>
-    </div>
-  </div>
+  <h1>Jogo da Velha</h1>
+  <hr>
+  <label for="player1">X</label>
+  <input type="text" id="player1" placeholder="Nome do Jogador 1">
+  <label for="player2">O</label>
+  <input type="text" id="player2" placeholder="Nome do Jogador 2">
+  <button id="start">Começar!</button>
+  <h2>Vez de: <span id="turnPlayer"></span></h2>
+  <section id="gameBoard">
+    <span class="cursor-pointer" data-region="0.0"></span>
+    <span class="cursor-pointer" data-region="0.1"></span>
+    <span class="cursor-pointer" data-region="0.2"></span>
+    <span class="cursor-pointer" data-region="1.0"></span>
+    <span class="cursor-pointer" data-region="1.1"></span>
+    <span class="cursor-pointer" data-region="1.2"></span>
+    <span class="cursor-pointer" data-region="2.0"></span>
+    <span class="cursor-pointer" data-region="2.1"></span>
+    <span class="cursor-pointer" data-region="2.2"></span>
+  </section>
 </body>
 </html>

@@ -1,75 +1,28 @@
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: sans-serif;
 }
-.background{
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(169, 169, 169);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.container{
+
+#gameBoard {
+  background-color: #232323;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 25em;
-  height: 25em;
-  gap: 15px;
-  background-color: white;
-}
-.content{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: darkcyan;
-}
-.container > .border{
-  border: none;
-}
-.players{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  position: relative;
-  bottom: 2em;
-}
-.players > p{
-  position: relative;
-  top: 0.5em;
-}
-.player{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
 }
 
-.inputNamePlayer{
-  background-color: rgb(209, 209, 209);
-  border: none;
+#gameBoard span {
+  background-color: #ddd;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
 }
 
+#gameBoard span.win {
+  background-color: #25a340;
+}
 
-.container > .center{
-  border: none;
-}
-.container > .top{
-  border-top: 0;
-}
-.container > .right{
-  border-right: 0;
-}
-.container > .left{
-  border-left: 0;
-}
-.container > .bot{
-  border-bottom: 0;
+.cursor-pointer {
+  cursor: pointer;
 }
