@@ -13,6 +13,9 @@ function disableRegion(element){
 }
 
 function initializeGame() {
+  document.querySelectorAll('.cursor-pointer').forEach(function (region){
+    region.style.cursor = 'pointer'
+  })
   if(document.getElementById('player1').value == "" || document.getElementById('player2').value == ""){
     alert('Precisa haver dois jogadores')
     return
