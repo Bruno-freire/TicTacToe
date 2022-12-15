@@ -20,6 +20,8 @@ function initializeGame() {
     alert('Precisa haver dois jogadores')
     return
   }
+  document.getElementById('player1').disabled = true
+  document.getElementById('player2').disabled = true
   vBoard = [['','',''],['','',''],['','','']]
   turnPlayer = 'player1'
   document.querySelector('h2').innerHTML = 'Vez de: <span id="turnPlayer"></span>'
@@ -82,6 +84,8 @@ function handleBoardClick(ev){
     handleWin(winRegions)
     document.querySelectorAll('.cursor-pointer').forEach(function (region){
       disableRegion(region)
+      document.getElementById('player1').disabled = false
+      document.getElementById('player2').disabled = false
     })
   }else if(vBoard.flat().includes('')){
     turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
@@ -89,6 +93,8 @@ function handleBoardClick(ev){
   }
   else{
     document.querySelector('h2').innerHTML = 'EMPATE!'
+    document.getElementById('player1').disabled = false
+    document.getElementById('player1').disabled = false
   }
 }
 
