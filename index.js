@@ -94,7 +94,7 @@ function handleBoardClick(ev){
   else{
     document.querySelector('h2').innerHTML = 'EMPATE!'
     document.getElementById('player1').disabled = false
-    document.getElementById('player1').disabled = false
+    document.getElementById('player2').disabled = false
   }
 }
 
